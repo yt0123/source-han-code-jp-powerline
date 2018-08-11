@@ -11,6 +11,11 @@ brew install fontforge --with-python
 
 ### Usage
 
+Initialize submodule
+```
+git submodule update --init
+```
+
 1. To split True-Type-Collectoin to True-Type-Font
 ```
 bin/ttc2ttf SourceHanCodeJP.ttc
