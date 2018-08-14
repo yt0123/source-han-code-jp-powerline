@@ -28,5 +28,5 @@ fontforge -lang=py -script ./fontpatcher/scripts/powerline-fontpatcher ./fonts/S
 
 3. To fixed some glyphs
 ```
-bin/adjust Source\ Han\ Code\ JP\ {Font Type}\ for \Powerline.ttf
+bin/adjust Source\ Han\ Code\ JP\ {Font Type}\ for\ Powerline.ttf
 ```
