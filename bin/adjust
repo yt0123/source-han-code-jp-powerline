@@ -21,16 +21,19 @@ def main(font):
     x_ratio = 1.0
     y_ratio = 1.0
     x_diff = 0
-    y_diff = 0
+    y_diff = 93
 
     scale = psMat.scale(x_ratio, y_ratio)
-    translate = psMat.translate(x_diff, y_diff)
+    translate = psMat.translate((x_diff, y_diff))
     transform = psMat.compose(scale, translate)
     for code in GLYPH_UNICODES:
-        f[code].transform(transform)
+        print(f[code].glyphname)
+        f[code].transform(scale)
+        f[code].transform(translate)
 
     fontname = font.replace("Source Han Code JP", "SourceHanCodeJP")
     f.generate(fontname)
+    f.close()
 
 
 if __name__ == "__main__":
